@@ -106,7 +106,7 @@
         }
         
         // Set scores
-        self.currentScore.text = F(@"%li",scene.score);
+        self.currentScore.text = F(@"%li",(long)scene.score);
         self.bestScoreLabel.text = F(@"%li",(long)[Score bestScore]);
         
     } completion:^(BOOL finished) {

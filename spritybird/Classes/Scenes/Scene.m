@@ -233,7 +233,7 @@ static bool wasted = NO;
         if(X(topPipe) + WIDTH(topPipe)/2 > bird.position.x &&
            X(topPipe) + WIDTH(topPipe)/2 < bird.position.x + FLOOR_SCROLLING_SPEED){
             self.score +=1;
-            scoreLabel.text = [NSString stringWithFormat:@"%lu",self.score];
+            scoreLabel.text = [NSString stringWithFormat:@"%lu",(long)self.score];
             if(self.score>=10){
                 scoreLabel.fontSize = 340;
                 scoreLabel.position = CGPointMake(CGRectGetMidX(self.frame), 120);
